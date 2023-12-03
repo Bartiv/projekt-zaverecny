@@ -1,0 +1,15 @@
+{
+  "description": "Zaverecny projekt v kurzu Stan se koderkou 2023",
+  "name": "projekt-zaverecny",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx @11ty/eleventy",
+    "serve": "npx @11ty/eleventy --serve"
+  },
+  "author": "Ivana Bartosova",
+  "license": "ISC",
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.1"
+  }
+}

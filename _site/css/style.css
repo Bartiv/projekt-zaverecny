@@ -1,0 +1,94 @@
+html { box-sizing: border-box; }
+*, ::before, ::after { box-sizing: inherit; }
+
+/* barvy: 
+cool gray: #606462
+white: #EDF0EE
+forest green: #00735C
+forest green tmavá: 
+#00493A */
+
+body{
+    margin: 20px;
+    font: 16px/1.5 'Nunito', sans-serif;
+}
+
+form{
+    width: 100%;
+    
+    
+}
+
+.form-field{
+    margin-bottom: 10px;
+    max-width: 400px;
+}
+
+
+.form-field label{
+    display: block;
+    font-size: 15px;
+    color: #00735C
+
+}
+
+.form-field input,
+.form-field textarea{
+    width: 100%;
+    border: 2px solid #00735C;
+    border-radius: 4px;
+    font-size: 15px;
+    padding: 5px 10px;
+    background-color: #EDF0EE;
+
+}
+.form-field input:hover,
+.form-field textarea:hover{
+    outline: 2px solid #00493A;
+    background-color: white;
+}
+
+
+.form-checkbox{
+     margin-bottom: 10px;
+}
+
+.form-checkbox input{
+   width: 15px;
+   height: 15px;
+}
+
+.form-checkbox input:focus{
+    outline: 2px solid #00493A;
+    background-color: white;  
+}
+
+
+
+
+.button{
+    background-color: #00735C;
+    color: #EDF0EE;
+    padding: 15px 20px;
+    border: 0;
+    border-radius: 4px;
+    font-size: 16px;
+   
+}
+
+.button:hover{
+    background-color: #00493A;
+   
+}
+
+.clanek{
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    gap: 25px;
+    margin: 25px;
+
+}
+
+.clanek img {
+    width: 100%;
+}

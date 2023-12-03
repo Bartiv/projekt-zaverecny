@@ -1,0 +1,26 @@
+---
+layout: sablona.njk
+title: Blog
+---
+
+
+
+<p> Na této stránce najdeš novinky ze světa běhání, zajímavé články o tom, jak začít běhat nebo jak neztrácet motivaci. Tipy na závody nebo články o zdravém životním stylu, prostě všem, co s tímhle koníčkem souvisí.
+</p>
+
+
+{% for prispevek in collections.blog | reverse %}
+
+<div class="clanek">
+
+    <img src="/images/{{ prispevek.data.foto }}" alt="{{ prispevek.data.alt }}">
+
+    <div class="clanek__texty">
+        <h3>{{ prispevek.data.title }}</h3>
+        <p>{{ prispevek.data.perex }}</p>
+        <p><a href="{{ prispevek.url }}">celý článek</a></p>
+    </div>
+
+</div>
+{% endfor %}
+
