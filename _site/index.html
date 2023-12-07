@@ -7,11 +7,15 @@
 
     <title></title>
 
-    <!-- Google Fonts: 'Nunito', sans-serif;   -->
+    <!-- Google Fonts: --font-default: 'Nunito', sans-serif;   -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
+    <!-- Google Fonts: --font-default: 'Merriweather', sans-serif;   -->
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
     <!-- Vlastní CSS -->
 
     <link rel="stylesheet" href="/css/style.css">
@@ -20,54 +24,106 @@
 </head>
 <body>
 
-    <div class="wrapper">
-        <header class="header">
-            <h1 class="header__logo"></h1>
+<div class="grid">
 
-                <!-- <img src="images/logo.svg" alt="logo Running out of Thyme"> -->
 
-                <nav class="menu">
-                    <a class="menu__item"><a href="/" class="menu__link">O Running out of Thyme</a>
-                    <a class="menu__item"><a href="/nas-tym/" class="menu__link">Náš tým</a>
-                    <a class="menu__item"><a href="/spolecne-akce/" class="menu__link">Společné akce</a>
-                    <a class="menu__item"><a href="/blog/" class="menu__link">Blog</a>
-                    <a class="menu__item"><a href="/pridej-se/" class="menu__link">Přidej se</a>
-                </nav>
+<header class="header">
+    <div class="header__inner">
+        <div class="header__left">
+            <div class="header__logo-name">Running out of Thyme</div>
+            <img class="header__logo-pic" src="/images/logo_img.jpg" alt="logo ROOT" width="90px">
+        </div>
+    </div>
+        
 
-              
-        </header>
+        <nav class="menu">
+            <div class="menu__headlines">
+                <a class="menu__item"><a href="/" class="menu__link">O Running out of Thyme</a>
+                <a class="menu__item"><a href="/nas-tym/" class="menu__link">Náš tým</a>
+                <a class="menu__item"><a href="/spolecne-akce/" class="menu__link">Společné akce</a>
+                <a class="menu__item"><a href="/blog/" class="menu__link">Blog</a>
+                <a class="menu__item"><a href="/pridej-se/" class="menu__link">Přidej se</a>
+            </div>
+        </nav>
+        
+    
+        
 
-        <div class="main">
 
-	<!--
-		zde se vloží obsah šablony,
-		která používá tuto hlavní šablonu
-	-->
-            <img src="/images/running-in-park.jpg" alt="running-in-park">
+</header>
+
+<main class="main">
+
+<!--
+zde se vloží obsah šablony,
+která používá tuto hlavní šablonu
+-->
+    
+<!-- ↑↑↑ odtud nahoru je vrchní část společná pro všechny stránky na webu -->
+
+
+<!-- sekce o ROOOT -->
+
 <section class="about">
-    <p>Vyběhni s námi každé úterý od šesti odpoledne z parku Ladronka</p>
-    <div class="header__image"></div>
+    <div class="about__image">
+        
+    </div>
 
-<div class="about__content">
-<h1>Running out of Thyme zkráceně ROOT</h1>
-<p>je název běžeckého týmu, který vznikl v roce 2020 jako iniciativa <a href="#">třech kamarádů</a>, kteří spolu chtěli trávit více času.</p>
 
-<p>V průběhu let se k našim třem běžcům postupně přidávali další a další kamarádi. Dnes je registrovaných na 100 nadšenců, kteří společně rádi vyběhnout do přírody v okolí svých domovů, ale i do vzdálenějších koutů republiky nebo za hranice, kamkoli je láska k běhání táhne.</p>
+    <div class="about__notice">
+        <h1>Vyběhni s námi každé úterý od šesti z parku Ladronka</h1>
+        <img class="about__mapa" src="images/Google Maps_Ladronka.jpg" alt="mapa" width="40%">
+    </div>
 
-<p>Vyběhni s námi každé úterý odpoledne v šest z Ladronky, ať už se checš proběhout po dni v kanceláři nebo se jen potkat s lidmi, co mají v běhání stejnou zálibu jako ty. Nezáleží, jestli jsi začátečník nebo ultramaratonec, rozhodující je, že tě baví se hýbat.</p>
-</div>
+    <div class="about__content">
+        <h2>Running out of Thyme, zkráceně ROOT</h2>
+        <p>je název běžeckého týmu, který vznikl v roce 2020 jako iniciativa <a href="#">třech kamarádů</a>, kteří spolu chtěli trávit více času. V průběhu let se k našim třem běžcům postupně přidávali další a další kamarádi. Dnes je registrovaných na 100 nadšenců, kteří společně rádi vyběhnout do přírody v okolí svých domovů, ale i do vzdálenějších koutů republiky nebo za hranice, kamkoli je láska k běhání táhne.
+        Každoročně se tým ROOT účastní dobročinných akcí, kdy za své naběhané kilometry posílá peníze těm, kteří je nevíce potřebují.</p>
+    </div>
 </section>
+<!-- konec sekce o ROOT -->
+
+
+	<!-- ↓↓↓ odtud dolů je spodní část společná pro všechny stránky na webu -->
 
 
 
 
+    
+</main>
 
+<footer class="footer">
+    <div class="footer_grid">
+        <div class="footer__grid-column">
+         
+            <p>
 
+                <span class="footer__title">Telefon:</span>+420 202 020 202
+                
+            </p>    
+
+            <p>
+                <span class="footer__title">Email:</span>
+                <a href="mailto:root@root.com">root@root.com</a>
+            </p>
+
+            <p>
+                <img class="footer__icon" src="/images/fb.svg" alt="icon-fb" width="45px">
+                
+            </p>
             
-        </main>
+            <p>
+                <img class="footer__icon" src="/images/instagram.svg" alt="icon-instagram" width="50px">
+            </p>
 
-        <footer class="footer">
-            &copy;2023, Ivana Bartošová
-        </footer>
-    </body>
-    </html>
+
+        </div>
+        <div class="footer__copyright">&copy;2023, Ivana Bartošová</div>
+    </div>
+</footer>
+
+</div>
+</body>
+</html>
+
+<!-- <img class="header__logo-pic" src="images/logo_img.jpg" alt="logo ROOT" width="90px"> -->

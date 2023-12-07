@@ -1,17 +1,54 @@
 html { box-sizing: border-box; }
 *, ::before, ::after { box-sizing: inherit; }
 
-/* barvy: 
-cool gray: #606462
-white: #EDF0EE
+:root {
+--primary: #606462;
+--secondary: #EDF0EE;
+--light: #00735C;
+--dark: #00493A;
+
+--font-default: 'Nunito', sans-serif;
+--font-special: 'Merriweather', sans-serif;
+
+--spacer: 1rem;
+--spacer-quarter: calc(var(--spacer) / 4);
+--spacer-half: calc(var(--spacer) / 2);
+--spacer-bigger: calc(var(--spacer) * 1.5);
+--spacer-double: calc(var(--spacer) * 2);
+
+h1 { font-size: 2rem; }
+h2 { font-size: 1.5rem; }
+h3 { font-size: 1.2rem; }
+
+:is(h1, h2, h3):first-child {
+	margin-top: 0;
+}
+
+.text-center {
+	text-align: center;
+}
+
+img {
+	width: 100%;
+}
+
+section {
+	padding: var(--spacer-double) var(--spacer-bigger);
+}
+
+}
+
+/* primary: cool grey
+secondary: white
 forest green: #00735C
-forest green tmavá: 
-#00493A */
+forest green tmavá: #00493A */
 
 body{
-    margin: 20px;
-    font: 16px/1.5 'Nunito', sans-serif;
+    margin: 0;
+    font-family:'Nunito', sans-serif;
+    font-size: 16px/1.5;
 }
+
 
 form{
     width: 100%;
@@ -92,3 +129,189 @@ form{
 .clanek img {
     width: 100%;
 }
+
+/*GRID*/
+
+.grid{
+    display: grid;
+    /* grid-template-columns: 200px 1fr 200px; */
+    grid-template-rows: 150px auto;
+    min-width: 1500px;
+}
+
+/* HEADER */
+.header{
+    grid-column: 1 / -1;
+    grid-row: 1 / 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--dark)
+     
+}
+
+.header__logo-name{
+    font-family: var(--font-special);
+    font-size: 18px;
+    font-weight: bold;
+    flex: 0 0 100%;
+    margin: 4px 20px;
+    color: var(--secondary);
+}
+
+.header__logo-pic{
+    margin: 5px 40px;
+    border: 1 solid white;
+    border-radius: 30px 2px;
+}
+
+
+/* MENU */
+.menu__headlines{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+
+.menu__item{
+    margin: 0;
+    padding: 0;
+
+}
+
+.menu__link:hover,
+.menu__link:focus{
+    color: var(--primary);
+}
+
+
+.menu__link{
+    display: inline-block; 
+    margin: 0 11px;
+    padding: 10px;
+    position: relative;
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 18px;
+    text-decoration: none;
+    color: #EDF0EE;
+    
+
+}
+
+/* ABOUT - o ROOT */
+
+.main{
+    background-color: var(--secondary);
+    grid-column: 1 / -1;
+    /* grid-row: 2 / 4; */
+}
+
+.about{
+        display: grid;
+        grid-template-rows: repeat(3, 1fr);
+        
+       
+    }
+
+.about__image{
+    background: url(./../images/running_people.jpg) no-repeat right center/cover;
+    
+    
+
+}
+
+
+.about__notice{
+    color: var(--dark);
+    background-color: var(--secondary);
+    text-align: center;
+    text-transform: uppercase;
+    padding: 20px;
+    
+}
+.about__notice h1{
+    color: #E55B13;
+}
+
+.about__mapa{
+    border: 1px solid var(--primary);
+    box-shadow: 0px 0px 5px 0px #848080f4;
+}
+
+
+.about__content{
+    background-color: var(--secondary);
+    /* display: grid; */
+    grid-template-columns: repeat(3, 1fr);
+       
+
+}
+
+.about__content h2{
+    text-align: center;
+    color: var(--dark);
+    /* grid-column: 2 / 3; */
+   
+}
+
+.about__content p{
+    text-align: center;
+    color: var(--light);
+    /* grid-column: 2 / 3; */
+ 
+}
+
+/* FOOTER */
+
+.footer{
+    grid-column: 1 / -1;
+    grid-row: 5 / 6;
+    background-color: var(--dark);
+}
+.footer__grid-column{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* grid-template-rows: 40px; */
+    color: var(--secondary);
+    font-size: 20px;
+    text-align: center;
+    padding: (--spacer-double) var(--spacer-bigger);
+   
+  
+}
+
+
+.footer a{
+    color: var(--secondary);
+    font-size: 18px;
+}
+.footer a:hover,
+.footer a:focus{
+    color: var(--primary);
+}
+.footer__copyright{
+    text-align: center;
+    background-color: var(--secondary);
+    color: var(--primary);
+    padding-top: 10px;
+}
+
+
+
+.team__image{
+    max-width: 150px;
+    border: 1px solid var(--light);
+    border-radius: 30px 2px;
+    float: left;
+    margin: 0 30px 15px 0;
+
+        
+      
+      
+}
+
+/* float: left;
+margin: 0 30px 15px 0; */

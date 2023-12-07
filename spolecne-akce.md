@@ -38,6 +38,6 @@ Jak Praotec Čech vystoupal na Říp v jednom dni 7x
 ## Saucony Dolomiti Extreme Race 
 ### 7.6.2024
 
-![Extreme Race](/images/beh-v-horach.jpg)
+![Extreme Race](/images/zasnezene-hory.jpg)
 V samotném srdci Bellunských Alp, které jsou na seznamu světového dědictví UNESCO, se již po 11. bude konat Saucony Dolomiti Extreme Trail. Jedinečné prostředí, které si milovník hor nemůže nechat ujít. *Číst dál...*
 

@@ -7,11 +7,15 @@
 
     <title>Blog</title>
 
-    <!-- Google Fonts: 'Nunito', sans-serif;   -->
+    <!-- Google Fonts: --font-default: 'Nunito', sans-serif;   -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
+    <!-- Google Fonts: --font-default: 'Merriweather', sans-serif;   -->
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
     <!-- Vlastní CSS -->
 
     <link rel="stylesheet" href="/css/style.css">
@@ -20,30 +24,41 @@
 </head>
 <body>
 
-    <div class="wrapper">
-        <header class="header">
-            <h1 class="header__logo"></h1>
+<div class="grid">
 
-                <!-- <img src="images/logo.svg" alt="logo Running out of Thyme"> -->
 
-                <nav class="menu">
-                    <a class="menu__item"><a href="/" class="menu__link">O Running out of Thyme</a>
-                    <a class="menu__item"><a href="/nas-tym/" class="menu__link">Náš tým</a>
-                    <a class="menu__item"><a href="/spolecne-akce/" class="menu__link">Společné akce</a>
-                    <a class="menu__item"><a href="/blog/" class="menu__link">Blog</a>
-                    <a class="menu__item"><a href="/pridej-se/" class="menu__link">Přidej se</a>
-                </nav>
+<header class="header">
+    <div class="header__inner">
+        <div class="header__left">
+            <div class="header__logo-name">Running out of Thyme</div>
+            <img class="header__logo-pic" src="/images/logo_img.jpg" alt="logo ROOT" width="90px">
+        </div>
+    </div>
+        
 
-              
-        </header>
+        <nav class="menu">
+            <div class="menu__headlines">
+                <a class="menu__item"><a href="/" class="menu__link">O Running out of Thyme</a>
+                <a class="menu__item"><a href="/nas-tym/" class="menu__link">Náš tým</a>
+                <a class="menu__item"><a href="/spolecne-akce/" class="menu__link">Společné akce</a>
+                <a class="menu__item"><a href="/blog/" class="menu__link">Blog</a>
+                <a class="menu__item"><a href="/pridej-se/" class="menu__link">Přidej se</a>
+            </div>
+        </nav>
+        
+    
+        
 
-        <div class="main">
 
-	<!--
-		zde se vloží obsah šablony,
-		která používá tuto hlavní šablonu
-	-->
-            
+</header>
+
+<main class="main">
+
+<!--
+zde se vloží obsah šablony,
+která používá tuto hlavní šablonu
+-->
+    
 
 
 <p> Na této stránce najdeš novinky ze světa běhání, zajímavé články o tom, jak začít běhat nebo jak neztrácet motivaci. Tipy na závody nebo články o zdravém životním stylu, prostě všem, co s tímhle koníčkem souvisí.
@@ -92,11 +107,41 @@
 
 
 
-            
-        </main>
+    
+</main>
 
-        <footer class="footer">
-            &copy;2023, Ivana Bartošová
-        </footer>
-    </body>
-    </html>
+<footer class="footer">
+    <div class="footer_grid">
+        <div class="footer__grid-column">
+         
+            <p>
+
+                <span class="footer__title">Telefon:</span>+420 202 020 202
+                
+            </p>    
+
+            <p>
+                <span class="footer__title">Email:</span>
+                <a href="mailto:root@root.com">root@root.com</a>
+            </p>
+
+            <p>
+                <img class="footer__icon" src="/images/fb.svg" alt="icon-fb" width="45px">
+                
+            </p>
+            
+            <p>
+                <img class="footer__icon" src="/images/instagram.svg" alt="icon-instagram" width="50px">
+            </p>
+
+
+        </div>
+        <div class="footer__copyright">&copy;2023, Ivana Bartošová</div>
+    </div>
+</footer>
+
+</div>
+</body>
+</html>
+
+<!-- <img class="header__logo-pic" src="images/logo_img.jpg" alt="logo ROOT" width="90px"> -->
